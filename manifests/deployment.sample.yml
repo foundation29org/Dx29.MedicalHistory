@@ -1,0 +1,32 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: <deployment-name>
+  namespace: <namespace>
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: <deployment-name>
+  template:
+    metadata:
+      labels:
+        app: <deployment-name>
+    spec:
+      containers:
+        - name: <deployment-name>
+          image: <acr_server>/dx29medicalhistory
+          ports:
+          - containerPort: 80
+          resources:
+            requests:
+              cpu: 0.23
+              memory: "256Mi"
+          volumeMounts:
+          - name: secrets
+            mountPath: /app/secrets
+            readOnly: true
+      volumes:
+      - name: secrets
+        secret:
+          secretName: secret-appsettings

@@ -1,0 +1,506 @@
+[
+  {
+    "Id": "g21070211293563506313644",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "Reports",
+    "Name": "Medical",
+    "Resources": {
+      "r21071611582333442595748": {
+        "Id": "r21071611582333442595748",
+        "Name": "chst2qkp0-dravet.jpg",
+        "Status": "Ready",
+        "Properties": {
+          "size": "259350"
+        },
+        "CreatedOn": "2021-07-16T11:58:25.4230133+00:00",
+        "UpdatedOn": "2021-07-16T11:58:54.7197977+00:00"
+      }
+    },
+    "CreatedOn": "2021-07-02T11:29:35.6351088+00:00",
+    "UpdatedOn": "2021-07-16T11:58:54.7198002+00:00"
+  },
+  {
+    "Id": "g21070211293576176705456",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "Reports",
+    "Name": "Genetic",
+    "Resources": {
+      "r21071211380415560145846": {
+        "Id": "r21071211380415560145846",
+        "Name": "Pfeiffer-quartet.vcf.gz",
+        "Status": "Error",
+        "Properties": {
+          "size": "21348630",
+          "pedFile": "Pfeiffer-quartet.ped",
+          "errorCode": "WRN_EXOMISER_103",
+          "errorMessage": "PedigreeSampleValidator$PedigreeValidationException",
+          "errorDetails": "Proband - pedigree mismatch. Proband ISDBM322016 not marked as affected in pedigree"
+        },
+        "CreatedOn": "2021-07-12T11:38:09.3668715+00:00",
+        "UpdatedOn": "2021-07-12T15:22:37.4443722+00:00"
+      },
+      "r21071215214940728568504": {
+        "Id": "r21071215214940728568504",
+        "Name": "Pfeiffer-quartet (1).vcf.gz",
+        "Status": "Error",
+        "Properties": {
+          "size": "21348630",
+          "errorCode": "WRN_EXOMISER_102",
+          "errorMessage": "SampleMismatchException",
+          "errorDetails": "Proband sample name not specified. Expected single sample VCF but got 4 sample names - [ISDBM322015, ISDBM322016, ISDBM322017, ISDBM322018]. Please check your sample and analysis files match."
+        },
+        "CreatedOn": "2021-07-12T15:21:51.1634976+00:00",
+        "UpdatedOn": "2021-07-12T15:22:37.4443731+00:00"
+      }
+    },
+    "CreatedOn": "2021-07-02T11:29:35.761744+00:00",
+    "UpdatedOn": "2021-07-12T15:22:37.4443747+00:00"
+  },
+  {
+    "Id": "g21070211293587936545335",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "Phenotype",
+    "Name": "Manual",
+    "Resources": {
+      "hp:0002063": {
+        "Id": "hp:0002063",
+        "Name": "HP:0002063",
+        "Status": "Selected",
+        "Properties": {},
+        "CreatedOn": "2021-07-02T11:29:36.1467414+00:00",
+        "UpdatedOn": "2021-07-16T11:12:40.1289151+00:00"
+      },
+      "hp:0011169": {
+        "Id": "hp:0011169",
+        "Name": "HP:0011169",
+        "Status": "Selected",
+        "Properties": {},
+        "CreatedOn": "2021-07-02T11:29:36.1468683+00:00",
+        "UpdatedOn": "2021-07-16T11:12:40.1289162+00:00"
+      },
+      "hp:0001250": {
+        "Id": "hp:0001250",
+        "Name": "HP:0001250",
+        "Status": "Selected",
+        "Properties": {},
+        "CreatedOn": "2021-07-02T11:29:36.1468699+00:00",
+        "UpdatedOn": "2021-07-16T11:12:40.1289164+00:00"
+      }
+    },
+    "CreatedOn": "2021-07-02T11:29:35.8793768+00:00",
+    "UpdatedOn": "2021-07-16T11:59:10.9321246+00:00"
+  },
+  {
+    "Id": "g2107021129359426352675",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "Genotype",
+    "Name": "Manual",
+    "Resources": {},
+    "CreatedOn": "2021-07-02T11:29:35.9426625+00:00",
+    "UpdatedOn": "2021-07-02T11:29:35.9426625+00:00"
+  },
+  {
+    "Id": "g2107021129360040484070",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "Analysis",
+    "Name": "Analysis",
+    "Resources": {
+      "d21070211300657277096759": {
+        "Id": "d21070211300657277096759",
+        "Name": "d21070211300657277096759",
+        "Status": "Ready",
+        "Properties": {
+          "symptoms": "hp:0001250;hp:0011169;hp:0002063",
+          "genes": "",
+          "genotypeIds": "",
+          "diseases": "mondo:0011461;mondo:0007366;orpha:306;mondo:0014328;mondo:0033361;mondo:0007365;mondo:0100079;mondo:0011875;mondo:0060671;mondo:0010682;mondo:0008041;orpha:101039;mondo:0014734;mondo:0013103;mondo:0007367;mondo:0011443;mondo:0011231;orpha:1949;mondo:0012224;mondo:0012226;mondo:0020772;mondo:0010918;orpha:725;mondo:0009186;mondo:0014718;mondo:0012843;mondo:0011416;orpha:139406;mondo:0013470;orpha:1945;orpha:163727;mondo:0013665;mondo:0013340;mondo:0008836;mondo:0014517;orpha:3175;mondo:0012655;mondo:0032858;orpha:139426;mondo:0054861;mondo:0012904;orpha:329178;mondo:0011896;mondo:0011892;mondo:0009077;mondo:0012707;mondo:0012466;orpha:1942;orpha:289504;mondo:0020752;mondo:0007325;mondo:0013653;mondo:0010707;mondo:0014150;mondo:0011891;mondo:0011593;mondo:0020759;mondo:0008951;orpha:36387;orpha:86909;mondo:0044326;orpha:79262;orpha:307;mondo:0032823;mondo:0014604;mondo:0014231;mondo:0008456;orpha:363654;orpha:79156;orpha:163985;mondo:0010450;mondo:0013625;mondo:0032813;orpha:228169;mondo:0012245;mondo:0014633;mondo:0013389;orpha:101071;mondo:0032938;mondo:0012205;mondo:0014533;orpha:85334;mondo:0033366;orpha:97345;orpha:308;mondo:0060761;mondo:0008242;mondo:0008042;mondo:0011764;mondo:0010451;orpha:306686;mondo:0012812;mondo:0032906;orpha:1935;mondo:0014962;orpha:280620;orpha:401901;orpha:1361"
+        },
+        "CreatedOn": "2021-07-02T11:30:06.5730688+00:00",
+        "UpdatedOn": "2021-07-02T11:30:13.1290359+00:00"
+      },
+      "d21070214041379070600489": {
+        "Id": "d21070214041379070600489",
+        "Name": "d21070214041379070600489",
+        "Status": "Ready",
+        "Properties": {
+          "symptoms": "hp:0001250;hp:0011169;hp:0002063",
+          "genes": "",
+          "genotypeIds": "",
+          "diseases": "mondo:0011461;mondo:0007366;orpha:306;mondo:0014328;mondo:0033361;mondo:0007365;mondo:0011875;mondo:0060671;mondo:0010682;mondo:0008041;orpha:101039;mondo:0014734;mondo:0013103;mondo:0007367;mondo:0011443;mondo:0011231;orpha:1949;mondo:0012224;mondo:0012226;mondo:0010918;mondo:0009186;mondo:0014718;mondo:0012843;mondo:0011416;orpha:139406;mondo:0013470;orpha:1945;orpha:163727;mondo:0013665;mondo:0008836;mondo:0014517;orpha:3175;mondo:0012655;orpha:139426;mondo:0054861;mondo:0012904;orpha:329178;mondo:0011896;mondo:0011892;mondo:0009077;mondo:0012707;mondo:0012466;orpha:1942;orpha:289504;mondo:0007325;mondo:0013653;mondo:0010707;mondo:0014150;mondo:0011891;mondo:0011593;mondo:0008951;orpha:36387;orpha:86909;mondo:0044326;orpha:79262;orpha:307;mondo:0014604;mondo:0014231;mondo:0008456;orpha:363654;orpha:79156;orpha:163985;mondo:0010450;mondo:0013625;mondo:0012245;mondo:0014633;mondo:0013389;mondo:0012205;mondo:0014533;orpha:85334;mondo:0033366;orpha:97345;orpha:308;mondo:0060761;mondo:0008242;mondo:0008042;mondo:0011764;mondo:0010451;orpha:306686;mondo:0012812;orpha:1935;mondo:0014962;orpha:280620;orpha:401901;orpha:1361"
+        },
+        "CreatedOn": "2021-07-02T14:04:13.791084+00:00",
+        "UpdatedOn": "2021-07-02T14:04:20.9203097+00:00"
+      }
+    },
+    "CreatedOn": "2021-07-02T11:29:36.0040877+00:00",
+    "UpdatedOn": "2021-07-02T14:04:20.9203132+00:00"
+  },
+  {
+    "Id": "g2107021129360938804166",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "Notes",
+    "Name": "Notes",
+    "Resources": {},
+    "CreatedOn": "2021-07-02T11:29:36.0938643+00:00",
+    "UpdatedOn": "2021-07-02T11:29:36.0938643+00:00"
+  },
+  {
+    "Id": "g21071611585441593641342",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "Phenotype",
+    "Name": "r21071611582333442595748",
+    "Resources": {
+      "hp:0001250": {
+        "Id": "hp:0001250",
+        "Name": "HP:0001250",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0001;S0004;S0006;S0007;S0008",
+          "score": "1"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5143086+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.140235+00:00"
+      },
+      "hp:0002123": {
+        "Id": "hp:0002123",
+        "Name": "HP:0002123",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0001",
+          "score": "0.95"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.514362+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402405+00:00"
+      },
+      "hp:0007359": {
+        "Id": "hp:0007359",
+        "Name": "HP:0007359",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0001",
+          "score": "0.942661"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5143658+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.140241+00:00"
+      },
+      "hp:0010867": {
+        "Id": "hp:0010867",
+        "Name": "HP:0010867",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0002",
+          "score": "0.97"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5143751+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402412+00:00"
+      },
+      "hp:0002069": {
+        "Id": "hp:0002069",
+        "Name": "HP:0002069",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0004",
+          "score": "0.96244204"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5144128+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402415+00:00"
+      },
+      "hp:0001945": {
+        "Id": "hp:0001945",
+        "Name": "HP:0001945",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0006;S0008",
+          "score": "0.9926915"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5144156+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402422+00:00"
+      },
+      "hp:0006813": {
+        "Id": "hp:0006813",
+        "Name": "HP:0006813",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0001",
+          "score": "0.89936733"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5145877+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402426+00:00"
+      },
+      "hp:0001251": {
+        "Id": "hp:0001251",
+        "Name": "HP:0001251",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0002",
+          "score": "0.805724"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5146057+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402429+00:00"
+      },
+      "hp:0001263": {
+        "Id": "hp:0001263",
+        "Name": "HP:0001263",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0002",
+          "score": "0.97670287"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5146077+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402431+00:00"
+      },
+      "hp:0001268": {
+        "Id": "hp:0001268",
+        "Name": "HP:0001268",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0002",
+          "score": "0.93030566"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5146089+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402434+00:00"
+      },
+      "hp:0002143": {
+        "Id": "hp:0002143",
+        "Name": "HP:0002143",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0003",
+          "score": "0.8785347"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5146103+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402436+00:00"
+      },
+      "hp:0001317": {
+        "Id": "hp:0001317",
+        "Name": "HP:0001317",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0003",
+          "score": "0.88330823"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5146223+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402439+00:00"
+      },
+      "hp:0002373": {
+        "Id": "hp:0002373",
+        "Name": "HP:0002373",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0006",
+          "score": "0.85530835"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5146264+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402442+00:00"
+      },
+      "hp:0100543": {
+        "Id": "hp:0100543",
+        "Name": "HP:0100543",
+        "Status": "Selected",
+        "Properties": {
+          "segments": "S0008",
+          "score": "0.9633171"
+        },
+        "CreatedOn": "2021-07-16T11:58:54.5146309+00:00",
+        "UpdatedOn": "2021-07-16T11:59:11.1402445+00:00"
+      }
+    },
+    "CreatedOn": "2021-07-16T11:58:54.4159529+00:00",
+    "UpdatedOn": "2021-07-16T11:59:11.2242628+00:00"
+  },
+  {
+    "Id": "g21101309322354525425019",
+    "UserId": "acc-f173cea80a3c2e7de94c56fa69f79108ed30ac72eb51f0b203f72058",
+    "CaseId": "c21070211293546382670965",
+    "Type": "TimeLine",
+    "Name": "Symptoms",
+    "Resources": {
+      "7122a411-c3da-4825-a2b8-a6d8178b0539": {
+        "Id": "7122a411-c3da-4825-a2b8-a6d8178b0539",
+        "Name": "hp:0002063",
+        "Status": "Ready",
+        "Properties": {
+          "startDate": "2021/01/01",
+          "isCurrent": "true",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4715902+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4715902+00:00"
+      },
+      "26b83b4e-7130-49c3-a23c-d312f75dffc8": {
+        "Id": "26b83b4e-7130-49c3-a23c-d312f75dffc8",
+        "Name": "hp:0011169",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.471626+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.471626+00:00"
+      },
+      "5a91206f-3d5b-488e-ac1f-b7950c152e3f": {
+        "Id": "5a91206f-3d5b-488e-ac1f-b7950c152e3f",
+        "Name": "hp:0001250",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716273+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716273+00:00"
+      },
+      "07e30d4f-215c-42d2-86ad-617ede226815": {
+        "Id": "07e30d4f-215c-42d2-86ad-617ede226815",
+        "Name": "hp:0002123",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.471628+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.471628+00:00"
+      },
+      "db7a082a-cefa-4962-8b61-9bc5a9cb0b9f": {
+        "Id": "db7a082a-cefa-4962-8b61-9bc5a9cb0b9f",
+        "Name": "hp:0007359",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716288+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716288+00:00"
+      },
+      "3f5b261d-e44c-435e-8f23-74b5e1065c4d": {
+        "Id": "3f5b261d-e44c-435e-8f23-74b5e1065c4d",
+        "Name": "hp:0010867",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716296+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716296+00:00"
+      },
+      "d120a638-972d-4aa8-9f3d-5b37b14c9d44": {
+        "Id": "d120a638-972d-4aa8-9f3d-5b37b14c9d44",
+        "Name": "hp:0002069",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716328+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716328+00:00"
+      },
+      "1f3867d9-805d-4ad7-891e-6e6a20da9a6f": {
+        "Id": "1f3867d9-805d-4ad7-891e-6e6a20da9a6f",
+        "Name": "hp:0001945",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716336+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716336+00:00"
+      },
+      "a1746705-3fde-4eed-a402-f663ac3b343e": {
+        "Id": "a1746705-3fde-4eed-a402-f663ac3b343e",
+        "Name": "hp:0006813",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716343+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716343+00:00"
+      },
+      "a45e15a6-e138-454e-88d5-535b83562b83": {
+        "Id": "a45e15a6-e138-454e-88d5-535b83562b83",
+        "Name": "hp:0001251",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716352+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716352+00:00"
+      },
+      "b3544ca1-7001-49f8-a51f-8921aa6e9927": {
+        "Id": "b3544ca1-7001-49f8-a51f-8921aa6e9927",
+        "Name": "hp:0001263",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.471636+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.471636+00:00"
+      },
+      "ab12e2b1-c4e4-4763-9998-596fc89491c1": {
+        "Id": "ab12e2b1-c4e4-4763-9998-596fc89491c1",
+        "Name": "hp:0001268",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716367+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716367+00:00"
+      },
+      "ef288e5f-52a0-4b9f-9153-6c0f8a9ee0f8": {
+        "Id": "ef288e5f-52a0-4b9f-9153-6c0f8a9ee0f8",
+        "Name": "hp:0002143",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716374+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716374+00:00"
+      },
+      "1a5c6f2a-0b36-4e86-982e-55af3700c44c": {
+        "Id": "1a5c6f2a-0b36-4e86-982e-55af3700c44c",
+        "Name": "hp:0001317",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716381+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716381+00:00"
+      },
+      "d23d5d0e-19e1-4112-85ed-df654bdcd4b5": {
+        "Id": "d23d5d0e-19e1-4112-85ed-df654bdcd4b5",
+        "Name": "hp:0002373",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716387+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716387+00:00"
+      },
+      "17967c6e-44f6-4d44-9887-891b6c5cb523": {
+        "Id": "17967c6e-44f6-4d44-9887-891b6c5cb523",
+        "Name": "hp:0100543",
+        "Status": "Ready",
+        "Properties": {
+          "isCurrent": "false",
+          "notes": null
+        },
+        "CreatedOn": "2021-10-13T09:32:19.4716396+00:00",
+        "UpdatedOn": "2021-10-13T09:32:19.4716396+00:00"
+      }
+    },
+    "CreatedOn": "2021-10-13T09:32:23.5453578+00:00",
+    "UpdatedOn": "2021-10-13T09:32:23.5463118+00:00"
+  }
+]
