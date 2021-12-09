@@ -16,7 +16,7 @@ It is used in the [Dx29 application](https://dx29.ai/) and therefore how to inte
 It is programmed in C#, and the structure of the project is as follows:
 
 >- src folder: This is made up of multimple folders which contains the source code of the project.
->>- Dx29.MedicalHistory.Web.API. In this project is the implementation of the controllers that expose the aforementioned methods.
+>>- Dx29.MedicalHistory.Web.API. In this project is the implementation of the controllers that expose the API methods.
 >>- Dx29.MedicalHistory. It is this project that contains the logic to perform the relevant operations.
 >>- Dx29 and Dx29.Azure. Used as libraries to add the common or more general functionalities used in Dx29 projects programmed in C#.
 >- .gitignore file
