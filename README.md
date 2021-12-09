@@ -18,7 +18,7 @@ It is programmed in C#, and the structure of the project is as follows:
 >- src folder: This is made up of multimple folders which contains the source code of the project.
 >>- Dx29.MedicalHistory.Web.API. In this project is the implementation of the controllers that expose the aforementioned methods.
 >>- Dx29.MedicalHistory. It is this project that contains the logic to perform the relevant operations.
->>- Dx29, Dx29.Azure and Dx29.Cosmos. Used as libraries to add the common or more general functionalities used in Dx29 projects programmed in C#.
+>>- Dx29 and Dx29.Cosmos. Used as libraries to add the common or more general functionalities used in Dx29 projects programmed in C#.
 >- .gitignore file
 >- README.md file
 >- manifests folder: with the YAML configuration files for deploy in Azure Container Registry and Azure Kubernetes Service.
