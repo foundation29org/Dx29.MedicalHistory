@@ -18,7 +18,7 @@ It is programmed in C#, and the structure of the project is as follows:
 >- src folder: This is made up of multimple folders which contains the source code of the project.
 >>- Dx29.MedicalHistory.Web.API. In this project is the implementation of the controllers that expose the aforementioned methods.
 >>- Dx29.MedicalHistory. It is this project that contains the logic to perform the relevant operations.
->>- Dx29 and Dx29.Azure. Used as libraries to add the common or more general functionalities used in Dx29 projects programmed in C#.
+>>- Dx29, Dx29.Azure and Dx29.Cosmos. Used as libraries to add the common or more general functionalities used in Dx29 projects programmed in C#.
 >- .gitignore file
 >- README.md file
 >- manifests folder: with the YAML configuration files for deploy in Azure Container Registry and Azure Kubernetes Service.
@@ -253,13 +253,6 @@ Note that this service is configured as "ClusterIP" since it is not exposed exte
 >- The second option is to directly expose this microservice as a LoadBalancer and configure a public IP address and DNS.
 
 >>- **Interesting link**: [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/en-GB/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&tabs=java)
-
-<p>&nbsp;</p>
-
-####  3. Testing
-
-The Sample folder contains an example of a C# project that uses the Medical History project.
-In it, you can see how the project is used and the tests that have been carried out on it.
 
 <p>&nbsp;</p>
 
