@@ -15,7 +15,7 @@ It is used in the [Dx29 application](https://dx29.ai/) and therefore how to inte
 
 It is programmed in C#, and the structure of the project is as follows:
 
->- src folder: This is made up of multimple folders which contains the source code of the project.
+>- src folder: This is made up of multiple folders which contains the source code of the project.
 >>- Dx29.MedicalHistory.Web.API. In this project is the implementation of the controllers that expose the API methods.
 >>- Dx29.MedicalHistory. It is this project that contains the logic to perform the relevant operations.
 >>- Dx29 and Dx29.Cosmos. Used as libraries to add the common or more general functionalities used in Dx29 projects programmed in C#.
@@ -70,7 +70,8 @@ It offers the following methods organised in different controllers:
 
 >- Medical cases controller: CRUD Operations on medical cases ``` api/v1/MedicalCases/ ``` 
 >>- To get the cases for an specific user by userId
->>>- GET request: ```api/v1/MedicalCases/<userId>?includeDeleted=<bool> ``` (includeDeleted is optional, for getting the deleted cases or not. Default value = false)
+>>>- GET request
+>>>- URL: ```http://localhost/api/v1/MedicalCases/<userId>?includeDeleted=<bool> ``` (includeDeleted is optional, for getting the deleted cases or not. Default value = false)
 >>>- Result: List of medical case objects, with: 
 >>>>- Id
 >>>>- User id owner
@@ -81,47 +82,58 @@ It offers the following methods organised in different controllers:
 >>>>- Dates of created on and updated on.
 >>>>- Method ToString() to return the userId and medical case id in string format: userId-id.
 >>- To get the specific case for an specific user by userId and caseId
->>>- GET request: ```api/v1/MedicalCases/<userId>/<caseId>?includeDeleted=<bool> ``` (includeDeleted is optional, for getting the deleted cases or not. Default value = false)
+>>>- GET request
+>>>- URL: ```http://localhost/api/v1/MedicalCases/<userId>/<caseId>?includeDeleted=<bool> ``` (includeDeleted is optional, for getting the deleted cases or not. Default value = false)
 >>>- Result: Medical case object like the one in the request of get medical cases from userId.
 >>- Create new medical case for userId
->>>- POST request: ```api/v1/MedicalCases/<userId>```
+>>>- POST request
+>>>- URL: ```http://localhost/api/v1/MedicalCases/<userId>```
 >>>- Body request: Object with patient information: Name, gender, birthdate and list of diagnosed diseases.
 >>>- Result: Medical case object like the one in the request of get medical cases from userId.
 >>- Update medical case:
->>>- PATCH request: ```api/v1/MedicalCases/<userId>/<caseId>```
+>>>- PATCH request
+>>>- URL: ```http://localhost/api/v1/MedicalCases/<userId>/<caseId>```
 >>>- Body request: Object with patient information: Name, gender, birthdate and list of diagnosed diseases.
 >>>- Result: Medical case object like the one in the request of get medical cases from userId.
 >>- To delete all the cases for an specific user by userId
->>>- DELETE request: ```api/v1/MedicalCases/<userId>``` (includeDeleted is optional, for getting the deleted cases or not. Default value = false)
+>>>- DELETE request:
+>>>- URL: ```http://localhost/api/v1/MedicalCases/<userId>``` (includeDeleted is optional, for getting the deleted cases or not. Default value = false)
 >>>- Result request: Ok if all is ok, or bad request if any error occurs.
 >>- Delete an existing medical case by userId and caseId
->>>- DELETE request: ```api/v1/MedicalCases/<userId>/<caseId>```
+>>>- DELETE request
+>>>- URL: ```http://localhost/api/v1/MedicalCases/<userId>/<caseId>```
 >>>- Result request: Ok if all is ok, or bad request if any error occurs.
 >- Medical cases shared controller: ``` api/v1/MedicalCaseShared/ ```
 >>- Get Medical case shared by information:
->>>- GET request: ```api/v1/MedicalCaseShared/<userId>/<caseId>```
+>>>- GET request
+>>>- URL: ```http://localhost/api/v1/MedicalCaseShared/<userId>/<caseId>```
 >>>- Result request:
 >>- Share share an specific medical case (caseId) of an user (userId) with another user (email):
->>>- POST request: ```api/v1/MedicalCaseShared/<userId>/<caseId>```
+>>>- POST request
+>>>- URL: ```http://localhost/api/v1/MedicalCaseShared/<userId>/<caseId>```
 >>>- Body request: Object with the email string and the action (accept, revoke, delete or created)
 >>>- Result request: Medical case object like the one in the request of get medical cases from userId.
 >>- Stop sharing medical case with a user.
->>>- PATCH request: ```api/v1/MedicalCaseShared/<userId>/<caseId>```
->>>-  Body request: Object with the email string and the action (accept, revoke, delete or created)
+>>>- PATCH request
+>>>- URL: ```http://localhost/api/v1/MedicalCaseShared/<userId>/<caseId>```
+>>>- Body request: Object with the email string and the action (accept, revoke, delete or created)
 >>>- Result request: Ok if all is ok, or bad request if any error occurs.
 >- Resource groups controller:  CRUD operations on resource groups ``` api/v1/ResourceGroups/ ```
 >>- Get resource group by userId, caseId. Filter by type or name
->>>- GET request: ``` api/v1/ResourceGroups/<userId>/<caseId>?type=<resource type>&name=<resource name> ``` (type and name are optionals, if indicated the method will only return the resources that meets this filters).
+>>>- GET request
+>>>- URL: ```http://localhost/api/v1/ResourceGroups/<userId>/<caseId>?type=<resource type>&name=<resource name> ``` (type and name are optionals, if indicated the method will only return the resources that meets this filters).
 >>>- Result request: Resource group object with:
 >>>>- Identifier, name and type of the resource group
 >>>>- The userId and the caseId associated with this resource group.
 >>>>- Created on and updated on dates.
 >>>>- A dictionary with the resources associated with resource identifier as key, and string with the state or information as value.
 >>- Get resource group by id
->>>- GET request: ``` api/v1/ResourceGroups/<userId>/<caseId>/<groupId>``` 
+>>>- GET request
+>>>- URL: ```http://localhost/api/v1/ResourceGroups/<userId>/<caseId>/<groupId>``` 
 >>>- Result request: Resource group object with the same items of get resource group previous request.
 >>- Create new resource group:
->>>- POST request: ``` api/v1/ResourceGroups/<userId>/<caseId>?type=<resource type>&name=<resource name> ``` 
+>>>- POST request
+>>>- URL: ```http://localhost/api/v1/ResourceGroups/<userId>/<caseId>?type=<resource type>&name=<resource name> ``` 
 >>>- Body request: A list of resources objects with:
 >>>>- Identifier and name of the resource
 >>>>- Status: undefined, selected, unselected
@@ -129,17 +141,20 @@ It offers the following methods organised in different controllers:
 >>>>- The created on and updated on dates.
 >>>- Result request: Resource group object with the same items of get resource group previous request.
 >>- Update resource group.
->>>- PUT request: ``` api/v1/ResourceGroups/<userId>/<caseId>?type=<resource type>&name=<resource name> ``` 
+>>>- PUT request
+>>>- URL: ```http://localhost/api/v1/ResourceGroups/<userId>/<caseId>?type=<resource type>&name=<resource name> ``` 
 >>>- Body request: A list of resources objects with the same items as the body request of create new resource.
 >>>- Result request: Resource group object with the same items of get resource group previous request.
 >>- Delete Reource Group by groupId 
->>>- DELETE request: ``` api/v1/ResourceGroups/<userId>/<caseId>/<groupId>``` 
+>>>- DELETE request
+>>>- URL: ```http://localhost/api/v1/ResourceGroups/<userId>/<caseId>/<groupId>``` 
 >>>- Result request: Ok if all is ok, or bad request if any error occurs.
 >- Resources controller: CRUD operations on resources ``` api/v1/Resources/ ```
 >>- Get resources by type?, name?, resourceId?
->>>- GET request:
+>>>- GET request
+>>>- URL:
 ``` 
-api/v1/Resources/<userId>/<caseId>?groupType=<group type>&groupName=<group name>&
+http://localhost/api/v1/Resources/<userId>/<caseId>?groupType=<group type>&groupName=<group name>&
 <resourceId=<resource id> 
 ``` 
 >>>	(All queries are optional).
@@ -149,21 +164,24 @@ api/v1/Resources/<userId>/<caseId>?groupType=<group type>&groupName=<group name>
 >>>>- Dictionary of strings with the properties of the resource: path, score, error, errorMessage.
 >>>>- The created on and updated on dates.
 >>- Get resources by groupId and resourceId
->>>- GET request: ``` api/v1/Resources/<userId>/<caseId>/<groupId>/<resourceId> ```
+>>>- GET request
+>>>- URL: ```http://localhost/api/v1/Resources/<userId>/<caseId>/<groupId>/<resourceId> ```
 >>>- Result response: A resource object with:
 >>>>- Identifier and name of the resource
 >>>>- Status: undefined, selected, unselected
 >>>>- Dictionary of strings with the properties of the resource: path, score, error, errorMessage.
 >>>>- The created on and updated on dates.
 >>- Get resources by type, name and resourceId
->>>- GET request: ``` api/v1/Resources/<userId>/<caseId>/<groupType>/<groupName>/<resourceId> ```
+>>>- GET request
+>>>- URL: ```http://localhost/api/v1/Resources/<userId>/<caseId>/<groupType>/<groupName>/<resourceId> ```
 >>>- Result response: A resource object with:
 >>>>- Identifier and name of the resource
 >>>>- Status: undefined, selected, unselected
 >>>>- Dictionary of strings with the properties of the resource: path, score, error, errorMessage.
 >>>>- The created on and updated on dates.
 >>- Upsert resources by userId and caseId:
->>>- PUT request: ``` api/v1/Resources/<userId>/<caseId>/```
+>>>- PUT request
+>>>- URL: ```http://localhost/api/v1/Resources/<userId>/<caseId>/```
 >>>- Body request: A dictionary with resourceGroupId.resourceGroupName as keys and list of resource objects as values with
 >>>>- Identifier and name of the resource
 >>>>- Status: undefined, selected, unselected
@@ -171,7 +189,8 @@ api/v1/Resources/<userId>/<caseId>?groupType=<group type>&groupName=<group name>
 >>>>- The created on and updated on dates.
 >>>- Result request: The same object send in body updated.
 >>- Upsert resources by groupId:
->>>- PUT request  ``` api/v1/Resources/<userId>/<caseId>/<resourceGroupId>/```
+>>>- PUT request
+>>>- URL: ```http://localhost/api/v1/Resources/<userId>/<caseId>/<resourceGroupId>/```
 >>>- Body request: List of resource objects with:
 >>>>- Identifier and name of the resource
 >>>>- Status: undefined, selected, unselected
@@ -183,7 +202,8 @@ api/v1/Resources/<userId>/<caseId>?groupType=<group type>&groupName=<group name>
 >>>>- Created on and updated on dates.
 >>>>- A dictionary with the resources associated with resource identifier as key, and string with the state or information as value.
 >>- Upsert resources by type and name
->>>- PUT request: ``` api/v1/Resources/<userId>/<caseId>/<groupType>/>groupName>```
+>>>- PUT request
+>>>- URL: ```http://localhost/api/v1/Resources/<userId>/<caseId>/<groupType>/>groupName>```
 >>>- Body request: List of resource objects with:
 >>>>- Identifier and name of the resource
 >>>>- Status: undefined, selected, unselected
@@ -195,14 +215,16 @@ api/v1/Resources/<userId>/<caseId>?groupType=<group type>&groupName=<group name>
 >>>>- Created on and updated on dates.
 >>>>- A dictionary with the resources associated with resource identifier as key, and string with the state or information as value.
 >>- Delete resources by groupId, resourceId:
->>>- DELETE request: ``` api/v1/Resources/<userId>/<caseId>/<groupId>?resourceId=<list of resource ids>```
+>>>- DELETE request
+>>>- URL: ```http://localhost/api/v1/Resources/<userId>/<caseId>/<groupId>?resourceId=<list of resource ids>```
 >>>- Result request:Resource group object with:
 >>>>- Identifier, name and type of the resource group
 >>>>- The userId and the caseId associated with this resource group.
 >>>>- Created on and updated on dates.
 >>>>- A dictionary with the resources associated with resource identifier as key, and string with the state or information as value.
 >>- Delete resources by group type, group name, resourceId:
->>>- DELETE request: ``` api/v1/Resources/<userId>/<caseId>/<groupType>/<groupName>?resourceId=<list of resource ids>```
+>>>- DELETE request
+>>>- URL: ```http://localhost/api/v1/Resources/<userId>/<caseId>/<groupType>/<groupName>?resourceId=<list of resource ids>```
 >>>- Result request: Resource group object with:
 >>>>- Identifier, name and type of the resource group
 >>>>- The userId and the caseId associated with this resource group.
